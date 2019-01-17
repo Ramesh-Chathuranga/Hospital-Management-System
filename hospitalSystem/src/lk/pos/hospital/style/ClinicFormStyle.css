@@ -1,0 +1,12 @@
+.button{
+    -fx-background-color:brown;
+    -fx-border-radius: 3px;
+}
+
+.mainForm{
+    -fx-background-image:url("/lk/pos/hospital/assets/patient.jpg");
+    -fx-background-size: cover;
+    -fx-border-color: black;
+    -fx-border-width: 2px 0px 2px 0px;
+    -fx-border-radius: 2px;
+}

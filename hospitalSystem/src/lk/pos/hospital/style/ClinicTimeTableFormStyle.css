@@ -1,0 +1,25 @@
+.button{
+    -fx-background-color:brown;
+    -fx-border-radius: 3px;
+}
+
+.mainForm{
+    -fx-background-image:url("/lk/pos/hospital/assets/computer-3343887_640.jpg");
+    -fx-background-size: cover;
+    -fx-border-color: black;
+    -fx-border-width: 2px 0px 2px 0px;
+    -fx-border-radius: 2px;
+}
+
+.txt{
+    -fx-background-color: transparent;
+}
+
+.combo{
+    -fx-text-fill: white;
+    -fx-font-size: 13PX;
+    -fx-font-family: 'Bell MT';
+    -khtml-fx-font-color: white;
+    fx-font-color: white;
+    -fx-font-weight: 900;
+ }

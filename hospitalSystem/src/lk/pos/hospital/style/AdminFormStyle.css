@@ -1,0 +1,7 @@
+.adminForm{
+    -fx-background-image:url("/lk/pos/hospital/assets/Admin1.jpg");
+    -fx-background-size: cover;
+    -fx-border-color: black;
+    -fx-border-width: 2px 0px 2px 0px;
+    -fx-border-radius: 2px;
+}

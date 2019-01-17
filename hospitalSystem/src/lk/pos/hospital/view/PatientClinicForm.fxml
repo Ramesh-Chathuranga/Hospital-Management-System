@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="944.0" styleClass="mainForm" stylesheets="@../style/PatientClinicFormStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pos.hospital.controller.PatientClinicFormController">
+   <children>
+      <Label fx:id="labTitle" layoutX="312.0" layoutY="7.0" prefHeight="45.0" prefWidth="376.0" text="       MEDICA  PRIVATE  HOSPITAL" textFill="#227f6f">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="46.0" prefHeight="21.0" prefWidth="137.0" text="Patient Clinic" textFill="#227f6f">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="butADD" layoutX="605.0" layoutY="281.0" onAction="#onActionSave" onMouseEntered="#onAnimationMouseEntered" onMouseExited="#onAnimationMouseExited" prefHeight="25.0" prefWidth="62.0" stylesheets="@../style/PatientClinicFormStyle.css" text="Save" />
+      <JFXButton fx:id="butRemove" layoutX="744.0" layoutY="281.0" onAction="#onActionDelete" onMouseEntered="#onAnimationMouseEntered" onMouseExited="#onAnimationMouseExited" prefHeight="25.0" prefWidth="62.0" stylesheets="@../style/PatientClinicFormStyle.css" text="Delete" />
+      <AnchorPane fx:id="butGO" layoutX="24.0" layoutY="22.0" onMouseClicked="#navigateTOpatientREG" onMouseEntered="#onAnimationMouseEntered" onMouseExited="#onAnimationMouseExited" prefHeight="34.0" prefWidth="35.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Go_Back_30px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labGo" layoutX="8.0" layoutY="6.0" text="GO" textFill="#d3d0d0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="447.0" layoutY="522.0" prefHeight="27.0" prefWidth="117.0" text="Copyright © 2018" textFill="#227f6f">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="txtpID" focusColor="#227f6f" labelFloat="true" layoutX="139.0" layoutY="108.0" prefHeight="25.0" prefWidth="173.0" promptText="Patient ID" />
+      <JFXComboBox fx:id="comboSFID" focusColor="#227f6f" labelFloat="true" layoutX="139.0" layoutY="161.0" prefHeight="25.0" prefWidth="173.0" promptText="Special Field ID" />
+      <JFXComboBox fx:id="comboDID" focusColor="#227f6f" labelFloat="true" layoutX="602.0" layoutY="162.0" prefHeight="25.0" prefWidth="206.0" promptText="Doctor Id" />
+      <JFXTextField fx:id="txtPNIC" focusColor="#227f6f" labelFloat="true" layoutX="344.0" layoutY="108.0" prefHeight="25.0" prefWidth="206.0" promptText="Patient NIC">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtboDNIC" focusColor="#227f6f" labelFloat="true" layoutX="139.0" layoutY="230.0" prefHeight="27.0" prefWidth="173.0" promptText="Doctor NIC">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSF" focusColor="#227f6f" labelFloat="true" layoutX="344.0" layoutY="161.0" prefHeight="25.0" prefWidth="206.0" promptText="Special Field">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPName" focusColor="#227f6f" labelFloat="true" layoutX="600.0" layoutY="108.0" prefHeight="25.0" prefWidth="206.0" promptText="Patient Name">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtboDNAME" focusColor="#227f6f" labelFloat="true" layoutX="346.0" layoutY="230.0" prefHeight="27.0" prefWidth="206.0" promptText="Doctor Name">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtClinicDate" focusColor="#227f6f" labelFloat="true" layoutX="139.0" layoutY="280.0" prefHeight="27.0" prefWidth="173.0" promptText="Clinic Date">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tabPatientClinic" layoutX="9.0" layoutY="316.0" prefHeight="200.0" prefWidth="931.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="PID" />
+          <TableColumn prefWidth="95.0" text="Patient Name" />
+            <TableColumn prefWidth="95.0" text="Patient NIC" />
+            <TableColumn prefWidth="95.0" text="Special Field ID" />
+            <TableColumn prefWidth="95.0" text="Special Field " />
+            <TableColumn prefWidth="95.0" text="Doctor ID" />
+            <TableColumn prefWidth="95.0" text="Doctor Name" />
+            <TableColumn prefWidth="95.0" text="Doctor NIC" />
+            <TableColumn prefWidth="95.0" text="Clinic Date" />
+            <TableColumn prefWidth="95.0" text="Schedule ID" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="comboSID" focusColor="#227f6f" labelFloat="true" layoutX="602.0" layoutY="231.0" prefHeight="25.0" prefWidth="206.0" promptText="Schedule ID" />
+      <JFXTextField fx:id="txtTime" layoutX="346.0" layoutY="281.0" prefHeight="25.0" prefWidth="206.0" />
+   </children>
+</AnchorPane>

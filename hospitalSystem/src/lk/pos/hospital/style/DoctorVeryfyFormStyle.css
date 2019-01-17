@@ -1,0 +1,12 @@
+.button{
+    -fx-background-color:transparent;
+    -fx-border-radius: 3px;
+}
+
+.mainForm{
+    -fx-background-image:url("/lk/pos/hospital/assets/500_F_80263284_Gpr13fql6eoFTLdt8uGXER9OFqyNf7Xm.jpg");
+    -fx-background-size: cover;
+    -fx-border-color: black;
+    -fx-border-width: 2px 0px 2px 0px;
+    -fx-border-radius: 2px;
+}

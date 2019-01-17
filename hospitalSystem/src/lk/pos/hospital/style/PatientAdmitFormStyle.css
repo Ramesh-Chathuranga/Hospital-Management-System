@@ -1,0 +1,17 @@
+.button{
+    -fx-background-color:brown;
+    -fx-border-radius: 3px;
+}
+
+.mainForm{
+    -fx-background-image:url("/lk/pos/hospital/assets/smiling-caregiver-visiting-happy-sick-260nw-1014875176.jpg");
+    -fx-background-size: cover;
+    -fx-border-color: black;
+    -fx-border-width: 2px 0px 2px 0px;
+    -fx-border-radius: 2px;
+}
+
+.optionBut{
+    -fx-background-color:transparent;
+    -fx-border-radius: 3px;
+}
