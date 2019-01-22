@@ -15,4 +15,3 @@
 ![Image of Demo14](https://github.com/Ramesh-Chathuranga/Hospital-Management-System/blob/master/img/demo14.png)
 ![Image of Demo15](https://github.com/Ramesh-Chathuranga/Hospital-Management-System/blob/master/img/demo15.png)
 ![Image of Demo16](https://github.com/Ramesh-Chathuranga/Hospital-Management-System/blob/master/img/demo16.png)
-
