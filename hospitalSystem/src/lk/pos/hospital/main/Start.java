@@ -29,7 +29,7 @@ public class Start extends Application {
     }
 
     private Scene navegation(Parent parent,Stage primaryStage){
-        loaderrorReport();
+     //   loaderrorReport();
         Scene scene=new Scene(parent);
         primaryStage.getIcons().add(new Image("/lk/pos/hospital/assets/icons8_Hospital_30px.png"));
         primaryStage.setTitle(" MEDIC HOSPITAL");
@@ -38,14 +38,14 @@ public class Start extends Application {
         return scene;
     }
 
-    private void loaderrorReport(){
-        FileHandler fileHandler = null;
-        try {
-            fileHandler = new FileHandler("hospitalSystem/error report/error.log", true);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        fileHandler.setFormatter(new SimpleFormatter());
-        Logger.getLogger("").addHandler(fileHandler);
-    }
+//    private void loaderrorReport(){
+//        FileHandler fileHandler = null;
+//        try {
+//            fileHandler = new FileHandler("hospitalSystem/error report/error.log", true);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        fileHandler.setFormatter(new SimpleFormatter());
+//        Logger.getLogger("").addHandler(fileHandler);
+//    }
 }
